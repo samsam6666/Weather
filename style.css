@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgba(0,212,255,1) 100%);
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+#saman{
+    text-align: center;
+    margin-top: 20px;
+}
+.location{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+}
+.location .icon img{
+    width: 200px;
+}
+.temperature{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.temperature-description{
+    margin-top: 50px;
+}
