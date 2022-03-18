@@ -1,4 +1,4 @@
-const url ='http://ip-api.com/json/?fields=status,country,city,lat,lon,timezone'
+const url ='https://api.ipgeolocation.io/ipgeo?apiKey=df31d5897a7b4010b5986dc3f4e4c738'
 const city = document.querySelector('.timezone')
 const icon = document.querySelector('.icon')
 const degree = document.querySelector('.degree')
@@ -6,10 +6,10 @@ const teDe = document.querySelector('.temperature-description')
 fetch(url)
 .then(response => response.json())
 .then(data =>{
-    let lat = data.lat
-    let lon = data.lon
-    let api = '0b0145ea853617340131ee9ede99367d'
-    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api}`)
+    let lat = data.latitude
+    let lon = data.longitude
+    const urlWed = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=0b0145ea853617340131ee9ede99367d`
+    fetch(urlWed)
     .then(response => response.json())
     .then(data =>{
         console.log(data);
