@@ -8,7 +8,8 @@ fetch(url)
 .then(data =>{
     let lat = data.lat
     let lon = data.lon
-    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=0b0145ea853617340131ee9ede99367d`)
+    let api = '0b0145ea853617340131ee9ede99367d'
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api}`)
     .then(response => response.json())
     .then(data =>{
         console.log(data);
