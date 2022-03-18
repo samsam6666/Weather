@@ -12,7 +12,6 @@ fetch(url)
     fetch(urlWed)
     .then(response => response.json())
     .then(data =>{
-        console.log(data);
         city.innerHTML = data.name
         chIcon(data.weather[0].main)
         degree.innerHTML = toCelsius(data.main.temp)
