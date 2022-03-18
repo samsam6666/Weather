@@ -1,4 +1,4 @@
-const url ='http://ip-api.com/json/?fields=status,country,city,lat,lon,timezone'
+const url ='https://ip-api.com/json/?fields=status,country,city,lat,lon,timezone'
 const city = document.querySelector('.timezone')
 const icon = document.querySelector('.icon')
 const degree = document.querySelector('.degree')
