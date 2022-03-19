@@ -28,7 +28,7 @@ function chIcon(data){
     if (data == 'Clouds') {
         icon.innerHTML = `<img src="./icons/Clouds.svg" >`  
     }else if (data == 'Clear'){
-        icon.innerHTML =`<img src="./icons/clear-Day.svg" >` 
+        icon.innerHTML =`<img src="./icons/Clear-Day.svg" >` 
     }else if (data =='snow'){
         icon.innerHTML =`<img src="./icons/Snow.svg" >`
     }else if (data =='rain'){
